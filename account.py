@@ -126,34 +126,35 @@ def log_in():
     )
 
     if account:
-        print(f"Login bem-sucedido! Bem-vindo de volta, {account['first_name']}!")
-        line()
+        while True:
+            print(f"Login bem-sucedido! Bem-vindo de volta, {account['first_name']}!")
+            line()
 
-        print("\nEscolha uma opção do menu:")
-        print("1. Ver saldo")
-        print("2. Depositar")
-        print("3. Sacar")
-        print("4. Transferir")
-        print("5. Sair")
-        line()
+            print("\nEscolha uma opção do menu:")
+            print("1. Ver saldo")
+            print("2. Depositar")
+            print("3. Sacar")
+            print("4. Transferir")
+            print("5. Sair")
+            line()
 
-        opt = input("Digite o número da opção desejada: ")
-        line()
+            opt = input("Digite o número da opção desejada: ")
+            line()
 
-        match opt:
-            case "1":
-                show_balance(account["balance"])
-            case "2":
-                deposit(account["balance"])
-            case "3":
-                withdraw(account["balance"])
-            case "4":
-                transfer(account["balance"])
-            case "5":
-                print("Obrigado por usar nosso banco digital. Até logo!")
-                exit()
-            case _:
-                return
+            match opt:
+                case "1":
+                    show_balance(account["balance"])
+                case "2":
+                    deposit(account["balance"])
+                case "3":
+                    withdraw(account["balance"])
+                case "4":
+                    transfer(account["balance"])
+                case "5":
+                    print("Obrigado por usar nosso banco digital. Até logo!")
+                    exit()
+                case _:
+                    return
     else:
         print("CPF ou senha incorretos. Tente novamente.")
         line()

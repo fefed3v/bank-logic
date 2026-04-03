@@ -1,0 +1,26 @@
+[
+    {
+        "id": "9b985c99-1ea8-43ac-bf89-ef7947370025",
+        "cpf": "123.456.789-10",
+        "phone_number": "(84) 98812-6627",
+        "password": "1234567",
+        "email": "a@gmail.com",
+        "first_name": "a",
+        "last_name": "a",
+        "age": 18,
+        "gender": "masculino",
+        "balance": 0.0
+    },
+    {
+        "id": "57d0c6f7-b938-44b6-83eb-8a6713189850",
+        "cpf": "123.456.789-11",
+        "phone_number": "(84) 98812-6628",
+        "password": "1234567",
+        "email": "fernandoherick@gmail.com",
+        "first_name": "Fernando",
+        "last_name": "Herick",
+        "age": 18,
+        "gender": "masculino",
+        "balance": 1000.0
+    }
+]
